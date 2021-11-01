@@ -1,0 +1,181 @@
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("612baab1266a0.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* SONG TITLE */
+
+.song-title {
+  text-align: center;
+  color: white;
+  padding: 100px;
+  margin: 100px 0 0;
+}
+.song-title .title {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* PLAYER */
+.player {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+}
+.player .fas {
+  font-size: 3rem;
+  color: white;
+  margin: 100px 75px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.player .fas:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* SONG BUTTON */
+
+.songs-names {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.songs-names .song-button {
+  width: 20%;
+  padding: 10px;
+  color: white;
+  background-color: #3b0000;
+  border: none;
+  border-radius: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 1px 5px rgb(230, 222, 222);
+  transition: padding 0.3s ease;
+}
+
+.songs-names .song-button:hover {
+  cursor: pointer;
+  padding: 12px;
+}
+
+/* ALL LCDP SONGS DIV */
+.all-songs {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  top: 15%;
+  color: white;
+  text-align: left;
+  width: 30%;
+  height: 700px;
+  background-color: #171717;
+  border-radius: 7px;
+  overflow: auto;
+  box-shadow: 2px 2px 15px rgb(42, 39, 39);
+  opacity: 1;
+}
+
+.all-songs .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 45px;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.all-songs .close-button {
+  display: flex;
+  float: right;
+  margin: 50px 45px;
+  border: none;
+  padding: 5px;
+  background-color: #171717;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.all-songs .close-button:hover {
+  cursor: pointer;
+}
+
+/* SONG DIVS */
+
+.song {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin: 30px;
+  border-bottom: 1px solid #292828;
+  text-align: left;
+}
+
+.song:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+.song .title {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  right: 45px;
+}
+
+.song .play-song {
+  border: none;
+  color: rgb(16, 68, 16);
+  background-color: #171717;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.song .play-song:hover {
+  cursor: pointer;
+}
+
+/* MEDIA  */
+
+@media (max-width: 700px) {
+  .player {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .song-title .title {
+    font-size: 1.7rem;
+    text-align: center;
+    width: 300px;
+  }
+
+  .player {
+    text-align: left;
+  }
+
+  .player .fas {
+    font-size: 1.5rem;
+  }
+
+  .songs-names .song-button {
+    width: 30%;
+    position: relative;
+    left: 15px;
+  }
+
+  .all-songs {
+    width: 70%;
+    margin-left: -75px;
+    margin-top: -100px;
+  }
+}
