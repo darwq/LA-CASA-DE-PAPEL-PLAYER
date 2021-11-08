@@ -19,12 +19,14 @@ var songsList = [
   new Audio(
     "Herman Dune - I Wish That I Could See You Soon (Lyric video) • La Casa De Papel _ Part 5 Soundtrack.mp3"
   ),
+  new Audio("Money Heist - Part 5 Vol. 2 _ Official Trailer _ Netflix.mp3"),
 ];
 var songsNamesList = [
   "MAD WORLD",
   "TI AMO",
   "GRANDOLA VILA MORENA",
   "I WISH THAT I COULD SEE YOU SOON",
+  "THE FUNERAL",
 ];
 var counter = 0;
 var i = 0;
