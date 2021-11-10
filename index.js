@@ -177,11 +177,19 @@ function toggleClass(button, Class) {
   $(button).toggleClass(Class);
 }
 
+function closeSongsSection() {
+  $("body").css("overflow", "auto");
+
+  songsDiv.hide(200);
+}
+
 buttonToShowSongsDiv.click(function () {
+  $("body").css("overflow", "hidden");
+
   songsDiv.show(200);
 
   closeButton.click(function () {
-    songsDiv.hide(200);
+    closeSongsSection();
   });
 
   if (append === 0) {
@@ -226,8 +234,6 @@ buttonToShowSongsDiv.click(function () {
           setTimeout(function () {
             song.play();
           }, 500);
-
-          console.log("Hello");
         });
 
         // setting the counter to song index
@@ -239,7 +245,7 @@ buttonToShowSongsDiv.click(function () {
 
       append++;
 
-      songsDiv.hide(200);
+      closeSongsSection();
     });
 
     append++;
